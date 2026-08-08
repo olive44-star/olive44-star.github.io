@@ -17,11 +17,11 @@ body {
   background: #ffffff;
 }
 
-a { color: var(--purple); }
+a { color: var(--orange); }
 a:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
 
 .site-header {
-  background: linear-gradient(135deg, var(--purple), #7d3baa);
+  background: linear-gradient(135deg, var(--orange), #FFA500);
   color: white;
   padding: 1rem;
 }
