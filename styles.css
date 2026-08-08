@@ -47,7 +47,7 @@ nav a { color: white; text-decoration-thickness: 2px; }
   margin: 0.25rem 0 1rem;
 }
 
-.eyebrow { color: #ffa500; font-weight: 700; }
+.eyebrow { color: #800080; font-weight: 700; }
 
 main, footer {
   max-width: var(--max-width);
