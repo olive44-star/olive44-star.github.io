@@ -17,11 +17,11 @@ body {
   background: #ffffff;
 }
 
-a { color: var(--orange); }
+a { color: var(--purple); }
 a:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
 
 .site-header {
-  background: linear-gradient(135deg, var(--orange), #FFA500);
+  background: linear-gradient(135deg, var(--purple), #7d3baa);
   color: white;
   padding: 1rem;
 }
@@ -47,7 +47,7 @@ nav a { color: white; text-decoration-thickness: 2px; }
   margin: 0.25rem 0 1rem;
 }
 
-.eyebrow { color: #800080; font-weight: 700; }
+.eyebrow { color: #ffd9bd; font-weight: 700; }
 
 main, footer {
   max-width: var(--max-width);
