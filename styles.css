@@ -70,7 +70,7 @@ article {
   main { padding-top: 2rem; }
   .hero p { max-width: 680px; font-size: 1.2rem; }
 }
-<style>
+
   table {
     border-collapse: collapse;
   }
@@ -79,11 +79,4 @@ article {
     border: 1px solid black;
     padding: 10px;
   }
-table {
-  border-collapse: collapse;
-}
 
-th, td {
-  border: 1px solid black;
-  padding: 10px;
-}
