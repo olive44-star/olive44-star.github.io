@@ -154,6 +154,39 @@
 </tr>
       </table>
     </section>
+
+  
+    <section id="learning">
+<h1> APIs</h1>
+<p> In this section i learnt how to use fast API and used it create some messages like the 404,200 and 500</p>
+<h2> What is FastAPI</h2>
+<p>FastAPI is a modern, fast (high-performance) web framework for building APIs with Python based on standard Python type hints. It is one of the most popular tools for creating backend services, particularly for machine learning applications, data science, and microservices </p>
+
+<h3>What does it look like</h3>
+<p>Quick FastAPI code looks like this</p>
+<ul>
+  <li> from fastapi import FastAPI</li>
+  <li>app = FastAPI()</li>
+  <li> @app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+</li>
+</ul>
+<p>When you run this code, it immediately sets up a web server and builds an interactive documentation page for you at http://127.0.0 </p>
+<h4> Break down of the code</h4>
+<ul>
+  <li>@app.get("/") is the Decorator:
+     It tells FastAPI that the function right below it is responsible for handling web requests that go to the main web address ( the "/" path) using the HTTP GET method.</li>
+  <li> def read_root(): is the function: 
+    This is the standard Python function that executes whenever a user or application visits that path.</li>
+<li>return {"message": "Hello World"} is the response: This is the data the function sends back to the user. 
+  FastAPI automatically converts this Python dictionary into a standard JSON object.</li>
+
+
+</ul>
+
+    </section>
+    
     <section id="projects">
       <h2>Project evidence</h2>
       <article>
