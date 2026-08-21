@@ -181,6 +181,15 @@ def read_root():
     This is the standard Python function that executes whenever a user or application visits that path.</li>
 <li>return {"message": "Hello World"} is the response: This is the data the function sends back to the user. 
   FastAPI automatically converts this Python dictionary into a standard JSON object.</li>
+  <h5>FastAPI can be used to generate some HTTPS status codes</h5>
+  <p>They are sent by the web server in the HTTP header to tell your browser or app whether the web request was successful or if an error occurred. While the code itself lives in the header, developers often repeat it inside the JSON response body so the app can read it easily.</p>
+  
+  <p>The 5 Categories of HTTP Status Codes:</p>
+  <li>1xx (Informational): The request was received, and the process is continuing.</li>
+  <li>2xx (Success): The action was successfully received, understood, and accepted (e.g., 200 OK or 201 Created).</li>
+  <li>3xx (Redirection): Further action needs to be taken to complete the request (e.g., 301 Moved Permanently).</li>
+  <li>4xx (Client Error): The request contains bad syntax or cannot be fulfilled (e.g., 404 Not Found or 401 Unauthorized).</li>
+  <li>5xx (Server Error): The server failed to fulfill an apparently valid request (e.g., 500 Internal Server Error)</li>
 
 
 </ul>
