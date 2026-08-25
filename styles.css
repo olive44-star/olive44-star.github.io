@@ -93,3 +93,16 @@ button {
 button:hover {
     background-color: #005582;
 }
+
+button {
+    background-color: #0077b5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005582;
+}
