@@ -195,6 +195,65 @@ def read_root():
 </ul>
 
     </section>
+    
+
+    
+    <section id="learning">
+      <h1>Getting A Domain Name</h1>
+      <p>To get a domain name you have to purchase it online and you can use providers like :squarespce, namespace etc</p>
+      <p>After purchasing the domain name you hve to set it up in Githyb and on the provider</p>
+      <h2> Setting up in GitHub</h2>
+      <ul>
+        <li>Configure GitHub Settings:Do this first to prevent domain takeover risks.</li>
+<li>Navigate to your repository on GitHub and click Settings.</li>
+<li>In the left sidebar under "Code, planning, and automation", click Pages.</li>
+<li>Scroll down to Custom domain, enter your domain (e.g., example.com), and click Save.</li>
+      </ul>
+      <h3>Updating DNS Record</h3>
+      <p>Completed at your domain registrar (e.g., Namecheap, GoDaddy).
+Log into your domain provider's dashboard, locate the DNS management section, and add the following records:
+</p>
+
+<table>
+        <tr>
+          <th> Type</th>
+          <th> Host/Name</th>
+          <th> Value/Target</th>
+        </tr>
+        <tr>
+          <td> A</td>
+          <td>@</td>
+          <td>185.199.108.153</td>
+        </tr>
+        <tr>
+          <td> A</td>
+          <td>@</td>
+          <td>185.199.109.153</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td> @</td>
+          <td>185.199.110.153</td>
+        </tr>
+        <tr>
+          <td>  A</td>
+<td>@</td>
+<td>185.199.111.153</td>
+        </tr>
+        <tr>
+          <td>CNAME</td>
+          <td>WWW</td>
+          <td>username.github.io (replace with your GitHub username)</td>
+        </tr>
+</table>
+<h4>Enforce HTTPS</h4>
+<ul>
+  <li>Wait for the DNS changes to propagate (often takes 15–30 minutes, but can take up to 24 hours).</li>
+  <li>Return to your repository's Settings > Pages screen.</li>
+<li>Check the Enforce HTTPS box. This provisions a certificate to ensure your site is secure and redirects HTTP traffic to HTTPS automatically.</li>
+</ul>
+
+      </section>
 
     <section id="projects">
       <h2>Project evidence</h2>
