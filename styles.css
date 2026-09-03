@@ -154,8 +154,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: #E6E6FA;
+    color: #222;
 }
-
 .content-card {
     background:#C8A2C8;
     padding: 30px;
