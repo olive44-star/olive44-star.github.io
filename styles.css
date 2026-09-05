@@ -206,10 +206,50 @@ body {
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 table {
     max-width: 100%;
+}
+
+
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-container table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+        font-size: 14px;
+    }
+
+    .table-container th,
+    .table-container td {
+        padding: 8px;
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
 }
