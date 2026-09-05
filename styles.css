@@ -106,6 +106,16 @@ th, td {
   padding: 15px;
 }
 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 button {
     background-color: #0077b5;
     color: white;
