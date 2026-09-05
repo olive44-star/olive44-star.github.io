@@ -201,3 +201,15 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
     max-width: 900px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+table {
+    max-width: 100%;
+}
