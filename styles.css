@@ -72,6 +72,31 @@ article {
 }
 
 
+@media (max-width: 768px) {
+    .page-container {
+        padding: 15px;
+    }
+
+    .content-card {
+        padding: 20px;
+        margin: 20px 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        gap: 15px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
 table {
   border-collapse: collapse;
 }
