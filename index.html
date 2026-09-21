@@ -311,6 +311,53 @@ Log into your domain provider's dashboard, locate the DNS management section, an
 
 
 
+
+
+        
+    <section id="learning">
+<div class="content-card">
+    </section>
+<h1>Using pandas</h1>
+<ol>
+  <li>Download the Anaconda application</li>
+<li>Click on Jupyter Notebook.</li>
+<li>Create a new folder </li>
+<li>Then a new IPYNB file, to save as a Python file.</li>
+<li>Pandas is actually part of the Python library, the same with matplotlib and NumPy.</li>
+</ol>
+<p>When using pandas, you start by importing the library.
+Import pandas
+Import numpy as np
+ And now you can start writing the code.
+</p>
+
+
+<h2>Common commands when you have a data frame.</h2>
+<ol>
+  <li>Once the dataframe is created, you can now read it using the code
+df = pd.read_csv('learners_enrollment.csv')</li>
+  <li>Df.shape shows you how many rows and columns there are.</li>
+   <li>df.head() displays the first 5 columns, but you can also add numbers in the () to tell it the specific amount you want to be displayed.</li>
+   <li>df.tail(7)—the same as the head but displays the last set of columns.</li>
+   <li>Df.dtypes-shows the type of data set there are, e.g., int, str</li>
+   <li>type(df)—shows the type of data frame</li>
+   <li>Df.columns gives the list of columns</li>
+   <li>df.info() shows which columns have information</li>
+   <li>df["course"],df[["course", "level", "city","gender"]]- selects a column and multiple columns.</li>
+<li>df[df["course"] == "Python"] gives you a column with a specific value under that column</li>
+<li>df[df["column"] > number]—used to view a column that has integer values</li>
+<li>df[(df["attendance_pct"] > 55) | (df["course"] == ("Python"))]—selecting a column with a value or the other</li>
+<li>df[(df["attendance_pct"] > 55) & (df["course"] == ("Python"))]—selecting a column with a value and another.</li>
+   <li>-df.sort_values(by="column_name")</li>
+   <li>-ascending=True → lowest → highest</li>
+   <li>-decending=False → highest → lowest</li>
+   <li>df[["course", "level", "city", "gender"]].head()- view the first set of values for specific columns.</li>
+  <li>Df.iloc[0]—viewing the values for a particular index.</li>
+<li>df.loc[0:6,["full_name", "department", "attendance_pct", "study_hours"]]-veiwing a value for a particular index and specific columns.</li>
+</ol>
+      </div>
+
+
       </section>
     <section id="projects">
       
