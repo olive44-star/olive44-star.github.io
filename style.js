@@ -12,7 +12,7 @@ backToTop.addEventListener("click", function() {
 const goToContact = document.getElementById("goToContact");
 
 goToContact.addEventListener("click", function() {
-    document.getElementById("Contact").scrollIntoView({
+    document.getElementById("contact").scrollIntoView({
         behavior: "smooth"
     });
 });
