@@ -359,3 +359,54 @@ table {
     background: white;
     color: #54217c;
 }
+
+
+
+
+
+
+/* ===== ABOUT ME SECTION ===== */
+
+#about {
+    padding: 80px 8%;
+    background: #f4f1fa;
+}
+
+#about .content-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(35, 15, 65, 0.08);
+    border-left: 5px solid #7135a0;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+#about .content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(35, 15, 65, 0.13);
+}
+
+#about .eyebrow {
+    color: #7135a0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#about h2 {
+    color: #35105f;
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+#about .content-card p:not(.eyebrow) {
+    color: #444444;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
