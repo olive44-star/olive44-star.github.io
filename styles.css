@@ -253,3 +253,109 @@ table {
         word-break: break-word;
     }
 }
+
+
+
+/* ===== PROFESSIONAL HOMEPAGE DESIGN ===== */
+
+/* Main page container */
+.page-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header styling */
+.site-header {
+    background: linear-gradient(135deg, #35105f, #7135a0);
+    color: white;
+    padding: 30px 8%;
+}
+
+/* Navigation bar */
+.site-header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 85px;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: #e5c3ff;
+}
+
+/* Hero section */
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 0 65px;
+}
+
+.hero .eyebrow {
+    color: #e6c5ff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0 0 12px;
+    font-weight: 800;
+}
+
+.hero h2 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #eadbfa;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 750px;
+}
+
+/* Hero buttons */
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: white;
+    color: #54217c;
+}
+
+.btn-primary:hover {
+    background: #e9d7f7;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #54217c;
+}
