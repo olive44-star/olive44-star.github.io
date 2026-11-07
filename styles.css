@@ -410,3 +410,76 @@ table {
     margin-bottom: 18px;
 }
 
+
+
+
+/* ===== SKILLS SECTION ===== */
+
+#skills {
+    padding: 80px 8%;
+    background: #f4f1fa;
+}
+
+#skills .content-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(35, 15, 65, 0.08);
+}
+
+#skills .eyebrow {
+    color: #7135a0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#skills h2 {
+    color: #35105f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#skills .content-card > p:not(.eyebrow) {
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Skills grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Individual skill cards */
+.skill-card {
+    background: #f7f3fc;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5d9f1;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(53, 16, 95, 0.12);
+    border-color: #7135a0;
+}
+
+.skill-card h3 {
+    color: #54217c;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
