@@ -630,3 +630,20 @@ table {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== PROJECT IMAGE SIZING ===== */
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
