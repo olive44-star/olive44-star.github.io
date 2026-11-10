@@ -483,3 +483,112 @@ table {
     line-height: 1.7;
 }
 
+
+
+
+
+
+
+
+
+
+/* ===== PROJECTS SECTION ===== */
+
+#projects {
+    padding: 80px 8%;
+    background: #f4f1fa;
+}
+
+#projects .content-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(35, 15, 65, 0.08);
+}
+
+#projects .eyebrow {
+    color: #7135a0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#projects h2 {
+    color: #35105f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#projects .content-card > p:not(.eyebrow) {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Project card layout */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Individual project cards */
+.project-card {
+    background: #f7f3fc;
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #e5d9f1;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(53, 16, 95, 0.12);
+}
+
+.project-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #54217c;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.project-card h4 {
+    color: #35105f;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+/* Technology labels */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.project-tags span {
+    background: #e9ddf5;
+    color: #54217c;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.project-status {
+    color: #287444 !important;
+    font-weight: 700;
+    margin-top: 22px;
+}
+
