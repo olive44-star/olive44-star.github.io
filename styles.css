@@ -592,3 +592,41 @@ table {
     margin-top: 22px;
 }
 
+
+
+
+/* ===== PROJECT CARD LAYOUT FIX ===== */
+
+#projects .projects-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+#projects .project-card {
+    background: #f7f3fc;
+    border: 1px solid #e5d9f1;
+    border-left: 4px solid #7135a0;
+    border-radius: 12px;
+    padding: 25px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(53, 16, 95, 0.12);
+}
+
+#projects .project-tags span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    #projects .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
