@@ -672,3 +672,42 @@ table {
     object-fit: cover;
     display: block;
 }
+
+
+/* ===== IMPROVE PROJECT CARD SIZING ===== */
+
+#projects .projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+#projects .project-card {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#projects .project-card h3 {
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+#projects .project-card p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#projects .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    #projects .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
