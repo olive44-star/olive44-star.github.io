@@ -10,13 +10,12 @@
 * { box-sizing: border-box; }
 
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--ink);
-  line-height: 1.6;
-  background: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #E6E6FA;
 }
-
 a { color: var(--purple); }
 a:focus-visible { outline: 3px solid var(--orange); outline-offset: 4px; }
 
@@ -175,11 +174,17 @@ th, td {
 
 
 .page-container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     padding: 30px;
 }
 
+@media (max-width: 768px) {
+    .page-container {
+        padding: 0 2%;
+    }
+}
 
 body {
     margin: 0;
@@ -198,10 +203,6 @@ body {
     border: 1px solid #ddd;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
-* {
-    box-sizing: border-box;
-}
-
 
 table {
     max-width: 100%;
@@ -255,10 +256,6 @@ table {
 /* ===== PROFESSIONAL HOMEPAGE DESIGN ===== */
 
 /* Main page container */
-.page-container {
-    width: 100%;
-    margin: 0 auto;
-}
 
 /* Header styling */
 .site-header {
@@ -638,7 +635,7 @@ width: 100%;
 
 .project-image {
     width: 100%;
-    height: 180px;
+    height: 140px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -662,19 +659,6 @@ width: 100%;
     margin-bottom: 20px;
 }
 
-.project-image {
-    width: 100%;
-    height: 140px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 
 /* ===== IMPROVE PROJECT CARD SIZING ===== */
