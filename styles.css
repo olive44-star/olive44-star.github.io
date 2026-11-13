@@ -647,3 +647,28 @@ table {
     object-fit: cover;
     display: block;
 }
+
+
+
+/* ===== SIDE-BY-SIDE PROJECT IMAGES ===== */
+
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
