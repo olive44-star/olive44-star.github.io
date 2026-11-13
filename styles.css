@@ -4,7 +4,7 @@
   --ink: #232323;
   --muted: #626262;
   --surface: #fff7ef;
-  --max-width: 960px;
+  --max-width: 100%;
 }
 
 * { box-sizing: border-box; }
@@ -50,11 +50,11 @@ nav a { color: white; text-decoration-thickness: 2px; }
 .eyebrow { color: #ffd9bd; font-weight: 700; }
 
 main, footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 1.5rem;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 1.5rem 2%;
 }
-
 section {
   padding: 1.5rem 0;
   border-bottom: 1px solid #eee;
@@ -74,15 +74,11 @@ article {
 
 @media (max-width: 768px) {
     .page-container {
-        padding: 15px;
-    }
-
-    .content-card {
-        padding: 20px;
-        margin: 20px 0;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 2%;
+}
 }
 
 @media (max-width: 768px) {
@@ -194,14 +190,14 @@ body {
 }
 .content-card {
     background: white;
+    width: 100%;
+    max-width: none;
     padding: 35px;
     margin: 30px auto;
     border-radius: 15px;
     border: 1px solid #ddd;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-    max-width: 900px;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -268,7 +264,7 @@ table {
 .site-header {
     background: linear-gradient(135deg, #35105f, #7135a0);
     color: white;
-    padding: 30px 8%;
+    padding: 30px 3%;
 }
 
 /* Navigation bar */
@@ -294,7 +290,8 @@ table {
 
 /* Hero section */
 .hero {
-    max-width: 1000px;
+max-width: none;
+width: 100%;
     margin: 0 auto;
     padding: 35px 0 65px;
 }
@@ -368,12 +365,13 @@ table {
 /* ===== ABOUT ME SECTION ===== */
 
 #about {
-    padding: 80px 8%;
+    padding: 80px 3%;
     background: #f4f1fa;
 }
 
 #about .content-card {
-    max-width: 900px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     padding: 45px;
     background: #ffffff;
@@ -416,12 +414,13 @@ table {
 /* ===== SKILLS SECTION ===== */
 
 #skills {
-    padding: 80px 8%;
+    padding: 80px 3%;
     background: #f4f1fa;
 }
 
 #skills .content-card {
-    max-width: 1000px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     padding: 45px;
     background: #ffffff;
@@ -495,12 +494,13 @@ table {
 /* ===== PROJECTS SECTION ===== */
 
 #projects {
-    padding: 80px 8%;
+    padding: 80px 3%;
     background: #f4f1fa;
 }
 
 #projects .content-card {
-    max-width: 1000px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
     padding: 45px;
     background: white;
@@ -528,16 +528,19 @@ table {
 }
 
 /* Project card layout */
-.projects-container {
+#projects .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
 }
-
 /* Individual project cards */
 .project-card {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     background: #f7f3fc;
-    padding: 28px;
+    padding: 30px;
     border-radius: 12px;
     border: 1px solid #e5d9f1;
     transition: 0.3s ease;
