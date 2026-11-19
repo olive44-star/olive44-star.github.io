@@ -659,6 +659,11 @@ width: 100%;
     margin-bottom: 20px;
 }
 
+.project-images .project-image:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+}
 
 
 /* ===== IMPROVE PROJECT CARD SIZING ===== */
